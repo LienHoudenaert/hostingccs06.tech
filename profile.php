@@ -328,10 +328,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <?php } ?>
           </form>
         </div>
-
-  
-
-
       </div>
       <!-- /.container-fluid -->
   

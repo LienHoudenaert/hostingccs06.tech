@@ -14,7 +14,7 @@
         Er zijn nog wel enkele stapjes die jij als gebruiker zal moeten volgen om jouw applicatie op onze server te laten draaien. Deze stappen zijn:</p>
         <ol>
             <li>
-                Ga via je FTP software naar je mapje op de server. Je kan deze <a href="ftps://172.26.6.100">link</a> gebruiken om rechtstreeks naar de server te gaan.<br>
+                Ga via je FTP software naar je mapje op de server. Je kan deze <a href="ftps://172.26.6.100"><b>link</b></a> gebruiken om rechtstreeks naar de server te gaan.<br>
                 Log hier in met je gebruikersnaam en je wachtwoord voor deze site.
 
                 <br></br>
@@ -85,21 +85,24 @@
             <br>
             <li>
                 Standaard komt Laravel met een .env.example file, dit bestand bevat alle typische configuratiewaarden. Vanuit deze file kan je vertrekken om je .env aan te maken.<br>
-                Zo kan je bijvoorbeeld de bestandsnaam ".env.example" venvagen door ".env"
+                Zo kan je bijvoorbeeld de bestandsnaam ".env.example" vervangen door ".env".
                 Pas de .env file aan zodat de waarden voor de database overeenkomen met de database die voor jouw is aangemaakt. <br>
-                Je DB_DATABASE is je gebruikersnaam, je DB_USERNAME is opnieuw je gebruikersnaam, je DB_password is je wachtwoord voor deze site en DB_HOST is localhost. <br></br>
-                Meer informatie hierover kan je hieronder terugvinden.<br>
-                Je kan deze <a href="http://172.26.6.100/phpmyadmin/" target="_blank">link</a> gebruiken om naar je database in phpmyadmin gaan.
+                Je DB_DATABASE is je gebruikersnaam, je DB_USERNAME is opnieuw je gebruikersnaam, je DB_password is je wachtwoord voor deze site en DB_HOST is localhost. <br>
+                Hieronder kan je een voorbeeld terugvinden van hoe het database gedeelte van je .env file er ongeveer moet uitzien.<br></br>
+
+                <img src="/img/env.png" alt=".env file"/>
+                
+                <br></br>Stel dat je o.a. de .env niet kan zien, dan staan verborgen bestanden waarschijnlijk niet op zichtbaar in je FTP client.<br>
+                Hoe je deze bestanden wel zichtbaar kan maken vind je <a href="ftp-info.php"><b>hier</b></a> terug.<br></br>
+                
+                Je kan deze <a href="http://172.26.6.100/phpmyadmin/" target="_blank"><b>link</b></a> gebruiken om naar je database in phpMyAdmin gaan.
             </li>
             <br>
             <li>
                 Voer de database migratie uit. Druk op onderstaande "Migrate" knop om je database migratie te starten.<br>
-                <strong>Let op!</strong> De migratie zal niet lukken als je je .env file nog niet hebt aangepast zodat deze overeenkomt met je databasenaam, databasegebruiker en wachtwoord.<br></br>
-                Hieronder kan je een voorbeeld terugvinden van hoe het database gedeelte van je .env file er ongeveer moet uitzien.<br>
+                <strong>Let op!</strong> De migratie zal niet lukken als je je .env file nog niet hebt aangepast zodat deze overeenkomt met je databasenaam, databasegebruiker en wachtwoord.<br></br>               
 
-                <img src="/img/env.png" alt=".env file"/>
-
-                <br></br>Je kan je .env file wijzigen met behulp van FTP.<br>
+                Je kan je .env file wijzigen met behulp van FTP.<br>
                 Als je .env file in orde is kan je op de "Migrate" knop drukken.<br></br>
         
         <form action="" method="post">
@@ -109,8 +112,9 @@
             </li>
             <br>
             <li>Je kan je website terugvinden via volgende link: <a href="http://<?php echo $username['username'];?>.hostingccs06.tech" target="_blank"><?php echo $username['username'];?>.hostingccs06.tech</a>.</li>
-            <br>
         </ol>
+
+        <br><p>Indien je problemen ondervind kan altijd een  ticket aan maken op de <a href="./support.php">support pagina</a>. Wij proberen je dan zo snel mogelijk verder te helpen.</p><br>
 
     </div>
     <!-- /.container-fluid -->

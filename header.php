@@ -145,7 +145,7 @@ $namesession = $firstname['firstname']." ".$lastname['lastname'];
 
             <?php } ?>
 
-            <!-- Nav Item - Webserver Collapse Menu -->
+            <!-- Nav Item - Laravel -->
             <li class="nav-item <?php if($pagename == 'laravel.php') { echo "active"; } ?>">
                 <a class="nav-link" href="laravel.php">
                     <i class="fab fa-laravel"></i>
@@ -153,7 +153,7 @@ $namesession = $firstname['firstname']." ".$lastname['lastname'];
                 </a>
             </li>
 
-            <!-- Nav Item - Webserver Collapse Menu -->
+            <!-- Nav Item - FTPS -->
             <li class="nav-item <?php if($pagename == 'ftp-info.php') { echo "active"; } ?>">
                 <a class="nav-link" href="ftp-info.php">
                     <i class="fas fa-file-upload"></i>
@@ -161,23 +161,17 @@ $namesession = $firstname['firstname']." ".$lastname['lastname'];
                 </a>
             </li>
 
-            <!-- Nav Item - Database Collapse Menu -->
-            <li class="nav-item <?php if($pagename == 'db.info.php') { echo "active"; } ?>">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+            <!-- Nav Item - Database -->
+            <li class="nav-item <?php if($pagename == 'db-info.php') { echo "active"; } ?>">
+                <a class="nav-link" href="db-info.php">
                     <i class="fas fa-database"></i>
                     <span>Database</span>
                 </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar" style="">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Opties:</h6>
-                        <a class="collapse-item" href="db-info.php">Database Informatie</a>
-                        <a class="collapse-item" href="http://172.26.6.100/phpmyadmin/" target="_blank">phpMyAdmin</a>
-                    </div>
-                </div>
             </li>
+
             
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item <?php if($pagename == 'doc.php') { echo "active"; } ?>">
+            <!-- <li class="nav-item <php if($pagename == 'doc.php') { echo "active"; } ?>">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
                     aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-file"></i>
@@ -195,7 +189,7 @@ $namesession = $firstname['firstname']." ".$lastname['lastname'];
                         <a class="collapse-item" href="doc.php">Document 5</a>
                     </div>
                 </div>
-            </li>
+            </li> -->
 
         </ul>
         <!-- End of Sidebar -->

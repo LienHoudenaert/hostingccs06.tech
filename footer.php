@@ -49,8 +49,8 @@
                 </div>
                 <div class="modal-body">Klik op "Logout" als je klaar bent om je sessie te beëindigen.</div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="logout.php">Logout</a>
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Annuleer</button>
+                    <a class="btn btn-primary" href="logout.php">Uitloggen</a>
                 </div>
             </div>
         </div>
@@ -75,7 +75,7 @@
                     <p>Rol: <?php if($adminsession == '1'){ echo "Admin";}elseif($adminsession == '0'){ echo "Gebruiker";} ?></p>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Sluiten</button>
                 </div>
             </div>
         </div>
@@ -101,7 +101,7 @@
                     </a>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>       
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Sluiten</button>       
                 </div>
             </div>
         </div>
@@ -133,8 +133,8 @@
                             </div>  
                             <div class="form-group">
                                 <div class="modal-footer">
-                                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                                    <input class="btn btn-primary" type="submit" value="Submit">
+                                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Annuleer</button>
+                                    <input class="btn btn-primary" type="submit" value="Verzenden">
                                 </div>
                         </form>
                     </div>

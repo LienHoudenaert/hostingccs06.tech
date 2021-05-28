@@ -13,28 +13,27 @@
             <h1 class="h3 mb-0 text-gray-800">FTPS Informatie:</h1>
         </div>
              
-            <h5><strong>Opmerking!</strong><br>
-            Het gebruik van FTPS is vereist! Standaard FTP & SFTP zijn uitgeschakeld voor uw veiligheid.</h5><br>
+            <h6 style="font-size: 1.1em !important;"><strong>Opmerking!</strong> Het gebruik van FTPS is vereist! Standaard FTP & SFTP zijn uitgeschakeld voor uw veiligheid.</h6><br>
 
-            <h5>IP-adres & poort:</h5>
-            <p>172.26.6.100  990 </p>
-            <h5>Gebruikersnaam:</h5>
-            <p><?php echo $username['username']; ?></p>
-            <h5>Wachtwoord:</h5>
-            <p>Je FTPS wachtwoord is je wachtwoord dat je gebruikt op deze website.</p>
+            <div style="margin-bottom: 7px;"> <h6 style="font-size: 1.15em !important; display: inline;">IP-adres & poort:</h6> <p style="display: inline"><?php echo $_SERVER['SERVER_ADDR'];?>  990 </p> </div>
+            <div style="margin-bottom: 7px;"><h6 style="font-size: 1.15em !important; display: inline;">Gebruikersnaam:</h6> <p style="display: inline"><?php echo $username['username']; ?></p></div>
+            <div style="margin-bottom: 7px;"><h6 style="font-size: 1.15em !important; display: inline;">Wachtwoord:</h6> <p style="display: inline">Je FTPS wachtwoord is je wachtwoord dat je gebruikt op deze website.</p></div>
+            
             <br>
 
-            <h5>Hidden files zichtbaar maken:</h5>
+            <h5><u>Verborgen bestanden</u> zichtbaar maken:</h5>
             <p>Indien je o.a. je .env.example niet kan zien, komt dit waarschijnlijk omdat jouw FTP client deze niet weergeeft.<br>
             In WINSCP kan je deze zichtbaar maken door Ctrl-Alt-H te doen. In Filezilla kan je dit doen door bovenaan op "Server" te klikken en daarna op "Tonen van verborgen bestanden forceren".<br>
             
             <br>
-            <img src="/img/filezilla.png" alt="screenshot filezilla" heigth="30%"/>
+            <img src="/img/filezilla.png" alt="screenshot filezilla" width="520px"/>
             <br></br>
 
             Als je FTP client hierboven niet vernoemt is dan geven we een goede tip; Google is your friend &#128521;.</p>
 
             <p>Soms is kan het ook zijn dat je even moet wachten tot je verborgen bestanden tevoorschijn komen.</p>
+
+            <br><p>Indien je problemen ondervind kan altijd een  ticket aan maken op de <a href="./support.php">support pagina</a>. Wij proberen je dan zo snel mogelijk verder te helpen.</p><br>
 
 
 

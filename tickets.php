@@ -10,7 +10,7 @@
 
     // Include config file
     include "header.php";
-    $filtervalue = '';
+    $filtervalue = $_SESSION['filterval'];
 
     if($_SERVER["REQUEST_METHOD"] == "POST"){
 
@@ -59,10 +59,10 @@
         <span class="caret"></span></button> -->
         <form class="form-group form-inline" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" style="width: 30em; position: relative;">
             <select class="form-control" id="filter" name="filter" style="width: 15em;">
-                <option value="" <?php if($filtervalue == ""){ echo "selected";} ?>>Geen filter <?php echo "(".$datacount['countall'].")";?></option>
-                <option value="1" <?php if($filtervalue == "1"){ echo "selected";} ?>>Probleem <?php echo "(".$datacountproblem['countproblem'].")";?></option>
-                <option value="2" <?php if($filtervalue == "2"){ echo "selected";} ?>>Vraag/opmerking <?php echo "(".$datacountremark['countremark'].")";?></option>
-                <option value="3" <?php if($filtervalue == "3"){ echo "selected";} ?>>Bug <?php echo "(".$datacountbug['countbug'].")";?></option>
+                <option value="" <?php if($filtervalue == ""){ echo "selected"; $_SESSION['filterval'] = $filtervalue;} ?>>Geen filter <?php echo "(".$datacount['countall'].")";?></option>
+                <option value="1" <?php if($filtervalue == "1"){ echo "selected"; $_SESSION['filterval'] = $filtervalue;} ?>>Probleem <?php echo "(".$datacountproblem['countproblem'].")";?></option>
+                <option value="2" <?php if($filtervalue == "2"){ echo "selected"; $_SESSION['filterval'] = $filtervalue;} ?>>Vraag/opmerking <?php echo "(".$datacountremark['countremark'].")";?></option>
+                <option value="3" <?php if($filtervalue == "3"){ echo "selected"; $_SESSION['filterval'] = $filtervalue;} ?>>Bug <?php echo "(".$datacountbug['countbug'].")";?></option>
             </select>
             <input class="form-control btn btn-primary" style="width: 8em; margin-left: 8px;" type="submit" name="submit" value="Filter">
         </form>

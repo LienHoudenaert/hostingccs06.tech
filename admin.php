@@ -38,13 +38,21 @@
                 
         <!-- Page Heading -->
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800"><?php if(count($_POST)>0) { ?> Resultaten voor <?php echo $search .":";  } else { ?> Lijst met gebruikers: <?php } ?></h1>
-            <!-- Topbar Search -->
+            <h1 class="h3 mb-0 text-gray-800"><?php if(count($_POST)>0) { ?> Resultaten voor <?php echo $search .":";  } else { ?> Lijst met gebruikers: <?php } ?></h1>         
+        </div>
 
-          <!-- Topbar Search -->
-        
-        <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search" style="padding-left: 224px" action="admin.php" method="post">
-            <div class="input-group">
+        <?php if(count($_POST)>0) { ?> 
+            <div>
+              <span><a href="admin.php" class="btn btn-primary btn-sm">Terug</a></span>
+                  <br></br>
+            </div>
+          <?php } ?>
+
+        <!-- Topbar Search -->
+
+        <div style="margin-bottom: 20px;">
+        <form class="d-none d-sm-inline-block form-inline mr-auto my-2 my-md-0 mw-100 navbar-search" action="admin.php" method="post">
+            <div class="input-group" style="z-index: 0;">
                 <input type="text" name="search" id="search" class="form-control bg-light border-0 small" placeholder="Zoeken naar gebruiker..."
                     aria-label="Search" aria-describedby="basic-addon2" style="background-color: #ffffff !important; width: 300px;">
                 <div class="input-group-append">
@@ -54,6 +62,8 @@
                 </div>  
             </div>
         </form>
+        </div>
+
 
         <script>
 
@@ -85,10 +95,6 @@
             });
 
         </script>
-
-        </div>
-        <span><a href="admin.php" class="btn btn-primary btn-sm">Terug</a></span>
-            <br></br>
           
             <table id="example" class="table table-striped table-bordered" style="width:100%">
                   <thead>
